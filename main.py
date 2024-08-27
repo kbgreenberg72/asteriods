@@ -19,6 +19,7 @@ def main ():
         
         screen.fill((0,0,0)) #create a black screen
         player.draw(screen)
+        player.update(dt)
         pygame.display.flip() # refresh the screen
 
         dt = clock.tick(FPS)# keep this at the end of the while loop for FPS control
